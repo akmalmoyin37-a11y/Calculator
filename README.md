@@ -8,6 +8,7 @@ A simple calculator application built with HTML, CSS, and JavaScript.
 - Basic arithmetic operations: addition, subtraction, multiplication, and division.
 - Clear and delete functions.
 - Responsive design.
+- Theme switcher (light and dark mode).
 
 ## How to Use
 

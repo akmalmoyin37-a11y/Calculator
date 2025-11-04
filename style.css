@@ -52,3 +52,44 @@
     transform: translateY(0);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+#theme-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .calculator {
+    background-color: #444;
+    border-color: #555;
+}
+
+.dark-mode .display {
+    background-color: #555;
+    border-color: #666;
+}
+
+.dark-mode .display input {
+    color: #fff;
+}
+
+.dark-mode .keys button {
+    background: linear-gradient(to bottom, #555, #333);
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.dark-mode .keys button:hover {
+    background: linear-gradient(to bottom, #333, #555);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}

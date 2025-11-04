@@ -21,6 +21,10 @@ function calculate() {
     }
 }
 
+function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+}
+
 document.addEventListener('keydown', function(event) {
     const key = event.key;
     if (key >= '0' && key <= '9') {
