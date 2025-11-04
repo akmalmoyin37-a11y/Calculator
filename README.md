@@ -9,6 +9,7 @@ A simple calculator application built with HTML, CSS, and JavaScript.
 - Clear and delete functions.
 - Responsive design.
 - Theme switcher (light and dark mode).
+- Calculation history.
 
 ## How to Use
 

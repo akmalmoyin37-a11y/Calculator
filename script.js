@@ -1,4 +1,6 @@
 
+let history = [];
+
 function insert(num) {
     document.getElementById('result').value += num;
 }
@@ -14,8 +16,10 @@ function deleteLast() {
 
 function calculate() {
     try {
-        let result = eval(document.getElementById('result').value);
+        let expression = document.getElementById('result').value;
+        let result = eval(expression);
         document.getElementById('result').value = result;
+        addToHistory(expression, result);
     } catch (e) {
         alert('Invalid expression');
     }
@@ -23,6 +27,21 @@ function calculate() {
 
 function toggleTheme() {
     document.body.classList.toggle('dark-mode');
+}
+
+function addToHistory(expression, result) {
+    history.push({ expression, result });
+    updateHistory();
+}
+
+function updateHistory() {
+    const historyList = document.getElementById('history-list');
+    historyList.innerHTML = '';
+    for (const item of history) {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.expression} = ${item.result}`;
+        historyList.appendChild(listItem);
+    }
 }
 
 document.addEventListener('keydown', function(event) {

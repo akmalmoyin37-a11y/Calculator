@@ -93,3 +93,23 @@
     background: linear-gradient(to bottom, #333, #555);
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
+
+.history {
+    margin-top: 20px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dark-mode #history-list li {
+    border-bottom-color: #555;
+}
