@@ -10,6 +10,7 @@ A simple calculator application built with HTML, CSS, and JavaScript.
 - Responsive design.
 - Theme switcher (light and dark mode).
 - Calculation history with a clear button.
+- Copy to clipboard functionality.
 
 ## How to Use
 

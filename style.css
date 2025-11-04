@@ -10,6 +10,7 @@
 }
 
 .display {
+    position: relative;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -23,6 +24,17 @@
     background-color: transparent;
     font-size: 32px;
     text-align: right;
+}
+
+#copy-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .keys {

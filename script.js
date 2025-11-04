@@ -49,6 +49,13 @@ function clearHistory() {
     updateHistory();
 }
 
+function copyToClipboard() {
+    const result = document.getElementById('result').value;
+    navigator.clipboard.writeText(result).then(() => {
+        alert('Copied to clipboard');
+    });
+}
+
 document.addEventListener('keydown', function(event) {
     const key = event.key;
     if (key >= '0' && key <= '9') {
